@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <a class="skip-link" href="#inicio">Saltar al contenido principal</a>
   <header class="site-header">
     <div class="announcement">Envío gratis en pedidos superiores a $180.000 <span>·</span> 10% en tu primera compra</div>
     <nav class="nav container" aria-label="Navegación principal">
@@ -27,6 +28,11 @@
         <a class="icon-link" href="#buscar" aria-label="Buscar">⌕</a>
         <a class="bag-link" href="#carrito" aria-label="Carrito">Bolsa <span>0</span></a>
         <a class="menu-link" href="#menu">Menú</a>
+        <label class="theme-toggle" for="theme-switch">
+          <input id="theme-switch" type="checkbox">
+          <span aria-hidden="true">☾</span>
+          <span class="sr-only">Activar modo oscuro</span>
+        </label>
       </div>
     </nav>
   </header>
@@ -129,7 +135,7 @@
     </section>
 
     <section class="newsletter" id="quiz-form">
-      <div class="container newsletter-inner"><div><p class="eyebrow">Tu piel, en tu correo</p><h2>Recibe ciencia,<br><em>sin ruido.</em></h2></div><form class="email-form"><label for="email">Un lugar para novedades, rituales y 10% de bienvenida.</label><div><input id="email" type="email" placeholder="Tu email" required><button type="submit" aria-label="Suscribirme">→</button></div><small>Al suscribirte aceptas nuestra política de tratamiento de datos.</small></form></div>
+      <div class="container newsletter-inner"><div><p class="eyebrow">Tu piel, en tu correo</p><h2>Recibe ciencia,<br><em>sin ruido.</em></h2></div><form class="email-form"><label for="email">Un lugar para novedades, rituales y 10% de bienvenida.</label><div><input id="email" name="email" type="email" autocomplete="email" placeholder="Tu email" aria-describedby="email-help" required><button type="submit" aria-label="Suscribirme">→</button></div><small id="email-help">Al suscribirte aceptas nuestra política de tratamiento de datos.</small></form></div>
     </section>
   </main>
 
